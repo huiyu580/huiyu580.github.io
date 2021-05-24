@@ -43,6 +43,6 @@ event loop會檢查當stack清空時，將queue中的cb function傳入stack中�
 
 
 **setTimeout**不是保證執行時間，而是保證**最短的等待執行時間**
-因為包含了setTimeout這個callback function的函式會先被執行，然後將cb丟給web API，經過等待時間後，再放入queue等待stack空了以後才會被執行
+因為包含了setTimeout這個callback function的函式會先被執行，然後將cb丟給web API，經過等待時間後，再放入queue，event loop會在stack空了以後將cb丟進stack中執行
 
 為了避免UI的體驗差，應該要避免程式在stack中的停留時間太長，例如載入大量的動畫和圖片，否則在queue中等待的callback function就無法被執行
