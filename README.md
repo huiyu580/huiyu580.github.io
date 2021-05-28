@@ -31,7 +31,7 @@ JS Runtime 一次只能做一件事情，瀏覽器能夠同時做多件事情是
 解決辦法：Async Callback(非同步回調)
 
 #### JS 非同步回調的過程
-當我們執行程式時，會把程式丟入stack中，執行後就從stack中移除，若該程式有callback function時，則會先傳給web API，經過等待時間，或由某個event觸發後，丟入queue(佇列)中，
+當我們執行程式時，會把程式丟入stack中，執行後就從stack中移除，若該程式有屬於 Web API 的工作時，則會先傳給web API，經過等待時間，或由某個event觸發後，丟入queue(佇列)中，
 event loop會檢查當stack清空時，將queue中的cb function傳入stack中執行。
 
 - stack 像是堆疊起來的盤子，**先進後出**
