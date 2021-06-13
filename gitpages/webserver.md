@@ -1,5 +1,5 @@
 # 2021/06/06 小賴老師上課筆記
-## Web server
+## Web server (express, express generator)
 
 ### 用Node JS架設簡單的web server
 - 使用node JS 內建的package
@@ -108,7 +108,7 @@ app.listen(3000, () => {
 - 不需要額外去除URL中的query string
 
 ### express generator (應用程式產生器)
-- 安裝express-generator，建立my-web資料夾
+- 安裝express-generator在global，然後建立my-web資料夾
 ```bash
 npm i -g express-generator
 npx express --view=pug my-web
@@ -130,3 +130,5 @@ npx express --view=pug my-web
 
 ### 參考資料
 [解析與處理url的參數](https://pjchender.blogspot.com/2018/08/js-javascript-url-parameters.html)
+[express文件](http://expressjs.com/en/starter/hello-world.html)
+[express generator](https://expressjs.com/zh-tw/starter/generator.html)
