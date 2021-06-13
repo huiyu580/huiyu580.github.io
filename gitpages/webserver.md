@@ -14,8 +14,8 @@ const server = http.createServer();
 
 - 使用server物件裡的listener函式來處理request和response(此時還沒有連線)
     - 需回覆的有：
-        1. status code (2xx, 3xx, 4xx, 5xx)
-        2. 
+        status code (2xx, 3xx, 4xx, 5xx)  
+
 ```javascript
 const server = http.createServer((req, res) => {
     // 使用 req請求物件 和 res回覆物件 來處理連線
@@ -122,7 +122,7 @@ npx express --view=pug my-web
 #### 建立快捷鍵
 在package.json中的script增加 `"dev": "node server.js"`，指定 dev 為 node server.js，之後就可以在terminal用`npm run dev`來執行server.js
 
-#### `npm init -f` 將專案交給npm，快速建立package.json
+#### 用`npm init -f` 將專案交給npm，快速建立package.json
 
 #### module, package, framework的差別
 - module < package < framework
