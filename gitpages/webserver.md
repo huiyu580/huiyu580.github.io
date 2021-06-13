@@ -13,8 +13,7 @@ const server = http.createServer();
 ```
 
 - 使用server物件裡的listener函式來處理request和response(此時還沒有連線)
-    - 需回覆的有：
-        status code (2xx, 3xx, 4xx, 5xx)
+    - 需回覆的有：status code (2xx, 3xx, 4xx, 5xx)
 ```javascript
 const server = http.createServer((req, res) => {
     // 使用 req請求物件 和 res回覆物件 來處理連線
