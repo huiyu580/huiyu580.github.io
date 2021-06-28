@@ -1,6 +1,4 @@
-# Sandy's Blog
-
-## Javascript event loop
+# Javascript event loop
 ### Philip Roberts JSConf EU 筆記 2021/05/24
 *https://www.youtube.com/watch?v=8aGhZQkoFbQ*
 > Question
