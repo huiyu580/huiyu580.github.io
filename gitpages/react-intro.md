@@ -30,25 +30,33 @@ return (
     </>
 )
 ```
-- React.Fragment元件`<></>`不會產生多餘的render標記
-- 因為react使用XHTML，因此自我封閉的元素結尾必須封閉
+
+- React.Fragment 元件`<></>`不會產生多餘的 render 標記
+- 因為 react 使用 XHTML，因此自我封閉的元素結尾必須封閉
+
 ```javascript=
 <img src="" />
 <input type="" />
 <hr />
 <br />
 ```
-- 自訂元件英文大寫開頭，HTML元素小寫開頭
-- 元件加入事件為on開頭，屬性值為函式
+
+- 自訂元件英文大寫開頭，HTML 元素小寫開頭
+- 元件加入事件為 on 開頭，屬性值為函式
+
 ```javascript=
 <h2 onClick={() => setCount(count + 1)}>{count}</h2>
 ```
-- JS關鍵字的屬性名稱會更改 ex. class -> className ; for -> htmlFor
-- style屬性為物件值
+
+- JS 關鍵字的屬性名稱會更改 ex. class -> className ; for -> htmlFor
+- style 屬性為物件值
+
 ```javascript=
 <p style={{color:'red'}}>content</p>
 ```
-- 列表標記項目，要給key屬性，避免列表中的重複內容
+
+- 列表標記項目，要給 key 屬性，避免列表中的重複內容
+
 ```javascript=
 const todoItems = todos.map(
     (todo) => <li key={todo.id}>{todo.text}</li>
